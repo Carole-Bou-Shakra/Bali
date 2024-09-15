@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #101820;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #101820;
+        }
+
+        nav {
+            display: flex;
+            position: absolute; 
+            top: 10px;
+            left: 10px; 
+            padding: 0; 
+            z-index: 10; 
+        }
+
+        .nav-icons a {
+            color: rgb(138, 204, 63);
+            font-size: 24px;
+            text-decoration: none;
+            margin-left: 10px; 
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            width: 100%;
+            margin: 0;
+        }
+
+        .left {
+            width: 80%; 
+            position: relative; 
+        }
+
+        .left img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .right {
+            display: grid;
+            grid-template-columns: repeat(2,1.5fr); 
+            width: 60%; 
+        }
+
+        .right img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .about-section {
+            grid-column: span 2; 
+            margin-top: 80px; 
+            padding: 25px; 
+            background-color: #101820; 
+        }
+
+        .about-section h1 {
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
+
+        .about-section p {
+            font-size: 18spx;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background-color: #101820;
+            padding: 80px;
+            display: flex;
+            justify-content: flex-start; 
+            top: 50;
+    
+        }
+        footer ul {
+            list-style: none;
+            display: flex;
+            gap: 70px;
+            padding: 25px;
+        }
+
+        footer ul li a {
+            color: rgb(241, 241, 241);
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-icons">
+            <a href="#"><i class="search-icon">&#x1F50D;</i></a>
+            <a href="#"><i class="menu-icon">&#9776;</i></a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Left Section -->
+        <section class="left">
+            <img src="BALIi.jpg" alt="Bali landscape">
+        </section>
+        <!-- Right Section -->
+        <section class="right">
+            <img src="left1.png" alt="Bali underwater statue">
+            <img src="left2.jpg" alt="Bali sunset by the ocean">
+            <!-- About Section -->
+            <div class="about-section">
+                <h1>About Bali</h1>
+                <p>
+                    Africa is the world's second largest and second-most populous continent (behind Asia in both categories). At about 30.3 million km² (11.7 million square miles) including adjacent islands, it covers 6% of Earth's total surface area and 20% of its land area.
+                </p>
+            </div>    
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">videos</a></li>
+            <li><a href="#">photos</a></li>
+            <li><a href="#">stories</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
